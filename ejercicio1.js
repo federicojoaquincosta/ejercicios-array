@@ -19,11 +19,21 @@ console.log(...arrayBinario);
 
 
 for(i = 0; i < arrayBinario.length; i++){
-    if (arrayBinario[i] === 0){
-        arrayBinario.splice(i, 1, 1);
-    } else if (arrayBinario[i] === 1){
-        arrayBinario.splice(i, 1, 0);
-    }
+   (arrayBinario[i] === 0)? arrayBinario.splice(i, 1, 1) : arrayBinario.splice(i, 1, 0);
 }
 
 console.log(...arrayBinario);
+
+
+
+/*
+
+if (arrayBinario[i] === 0){
+    arrayBinario.splice(i, 1, 1);
+} else if (arrayBinario[i] === 1){
+    arrayBinario.splice(i, 1, 0);
+
+
+}
+
+*/
